@@ -6,6 +6,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Behaviors.EightDir,
 		C3.Behaviors.Bullet,
 		C3.Plugins.Touch,
+		C3.Plugins.Keyboard,
 		C3.Plugins.Touch.Cnds.IsTouchingObject,
 		C3.Behaviors.EightDir.Acts.SimulateControl,
 		C3.Plugins.Touch.Cnds.OnTouchObject,
@@ -24,7 +25,8 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Acts.GoToLayout,
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.ResetGlobals,
-		C3.Plugins.System.Cnds.EveryTick
+		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Keyboard.Cnds.IsKeyDown
 	];
 };
 self.C3_JsPropNameTable = [
@@ -56,6 +58,7 @@ self.C3_JsPropNameTable = [
 	{youWin: 0},
 	{reply: 0},
 	{home: 0},
+	{Keyboard: 0},
 	{Lives: 0}
 ];
 
@@ -85,5 +88,6 @@ self.InstanceType = {
 	Sprite12: class extends self.ISpriteInstance {},
 	youWin: class extends self.ISpriteInstance {},
 	reply: class extends self.ISpriteInstance {},
-	home: class extends self.ISpriteInstance {}
+	home: class extends self.ISpriteInstance {},
+	Keyboard: class extends self.IInstance {}
 }
