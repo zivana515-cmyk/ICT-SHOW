@@ -4,6 +4,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Sprite,
 		C3.Plugins.Text,
 		C3.Behaviors.EightDir,
+		C3.Behaviors.bound,
 		C3.Behaviors.Bullet,
 		C3.Plugins.Touch,
 		C3.Plugins.Keyboard,
@@ -26,6 +27,7 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.System.Cnds.OnLayoutStart,
 		C3.Plugins.System.Acts.ResetGlobals,
 		C3.Plugins.System.Cnds.EveryTick,
+		C3.Plugins.Keyboard.Cnds.OnKey,
 		C3.Plugins.Keyboard.Cnds.IsKeyDown
 	];
 };
@@ -36,6 +38,7 @@ self.C3_JsPropNameTable = [
 	{kanan: 0},
 	{tembak: 0},
 	{"8Direction": 0},
+	{BoundTo: 0},
 	{player: 0},
 	{Bullet: 0},
 	{laser: 0},
